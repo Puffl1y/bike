@@ -9,11 +9,9 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
         errorMessage.style.display = 'block';
     } else {
         errorMessage.style.display = 'none';
-        // Aqui você pode adicionar o código para enviar o formulário
-        // Por exemplo, se estiver usando Ajax para enviar os dados sem recarregar a página
+        
         console.log('E-mail válido:', email);
         alert('Inscrição realizada com sucesso!');
-        // Limpar o campo de e-mail após o envio
         emailField.value = '';
     }
 });
