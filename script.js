@@ -1,5 +1,5 @@
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio do formulário
+    event.preventDefault(); 
 
     const emailField = document.getElementById('email');
     const email = emailField.value;
@@ -17,7 +17,6 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
 });
 
 function validateEmail(email) {
-    // Regex para validar o formato do e-mail
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
 }
